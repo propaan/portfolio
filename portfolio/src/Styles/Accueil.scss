@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Stroma";
+    src: url("../Assets/Fonts/Stroma-Bold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+#App {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#presentation {
+    background-image: url("../Assets/Images/back1.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills {
+    background-image: url("../Assets/Images/back3.png");
+}
+
+#works {
+    background-image: url("../Assets/Images/back2.png");
+}
+
+#presentation {
+    font-family: "Stroma";
+    color: white;
+}
+
+#name, #hand-agitment {
+    font-size: 3.815rem;
+}
+
+#hand-agitment {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    20% {
+        transform: rotate3d(0,0,1,15deg);
+    }
+    40% {
+        transform: rotate3d(0,0,1,-10deg);
+    }
+    60% {
+        transform: rotate3d(0,0,1,5deg);
+    }
+    80% {
+        transform: rotate3d(0,0,1,-5deg);
+    }
+    100% {
+        transform: rotate3d(0,0,1,0);
+    }
+}
+
+#junior {
+    float: right;
+    font-size: 1.25rem;
+    color:rgb(196, 196, 196);
+}
+
+#skills {
+    font-family: "Stroma";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#code-img {
+    height: 70px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title * {
+    padding: 5px 10px 5px;
+}
+
+.title h1 {
+    font-size: 1.953rem;
+}
+
+#code-img {
+}
